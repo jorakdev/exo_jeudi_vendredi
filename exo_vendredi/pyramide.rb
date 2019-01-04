@@ -1,6 +1,6 @@
 
-puts "exo 20"
-puts "Combien d'etage voulez vous pour la pyramide"
+
+puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
 print "> "
 nbr_py = gets.chomp()
 
