@@ -1,18 +1,27 @@
 
-puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
+puts "exo 20"
+puts "Combien d'etage voulez vous pour la pyramide"
 print "> "
 nbr_py = gets.chomp()
 
-for i in (1..nbr_py.to_i)
+if nbr_py.to_i > 25
+  puts "nombre incorrect => fin du program"
+  elsif nbr_py.to_i < 1
+    puts "nombre incorrect => fin du program"
+else
 
-  #si  l'input de l'user est 1 (nbr_py = 1) on entre pas dans cette boucle car la condition n'est pas vérifiée
-  #on passe directement dans for k in (1..i) ...
-  for j in (1..nbr_py.to_i-i)
-    print " "
-  end
+  for i in (1..nbr_py.to_i)
 
-  for k in (1..i)
-    print "#"
+    #si  'input de l'user est 1 (nbr_py = 1) en entre pas dans cette boucle car la condition n'est pasvérifié
+    #on passe directement dans for k in (1..i)
+    for j in (1..nbr_py.to_i-i)
+      print " "
+    end
+
+    for k in (1..i)
+      print "#"
+    end
+    puts ""
   end
-  puts ""
 end
+
