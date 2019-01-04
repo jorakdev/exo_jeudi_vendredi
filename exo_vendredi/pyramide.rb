@@ -5,8 +5,8 @@ nbr_py = gets.chomp()
 
 for i in (1..nbr_py.to_i)
 
-  #si  'input de l'user est 1 (nbr_py = 1) en entre pas dans cette boucle car la condition n'est pasvérifié
-  #on passe directement dans for k in (1..i)
+  #si  'input de l'user est 1 (nbr_py = 1) on entre pas dans cette boucle car la condition n'est pas vérifiée
+  #on passe directement dans for k in (1..i) ...
   for j in (1..nbr_py.to_i-i)
     print " "
   end
